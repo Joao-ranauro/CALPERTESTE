@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <title>FluxoUnidade</title>
+</head>
+<body>
+
+<div class="formularioInteiro" >
+    <h1 class="titulotabela1">Fluxo da unidade</h1>
+    <h2 class="titulotabela2">Monte sua tabela:</h2>
+  
+  <div class="allForms">
+
+       <form  class="form-unidade">
+
+        <label class="label-form-unidade">VALOR DA UNIDADE:</label>
+        <input type="number" class="input-form-unidade" id="inputUnidade" min="0" placeholder="R$ 0.000,00"/>
+       
+      </form>  
+      
+
+      <form  class="form">
+
+      <label class="label-form">SINAL</label>
+      <input type="number" class="input-form" id="inputSinal" min="0" placeholder="R$ 0.000,00"/>
+      <input type="button" value="Ajustar Sinal" class="buttonRegistrar" />
+
+    </form>  
+   
+        <form  class="form">
+
+        <label class="label-form">MENSAIS</label>
+        <input type="number" class="input-form" id="inputMensais" min="0" placeholder="R$ 0.000,00"/>
+        <input type="button" value="Ajustar Mensais" class="buttonRegistrar" />
+
+      </form>  
+     
+      <form  class="form">
+        <label class="label-form">SEMESTRAIS</label>
+
+        <input type="number" class="input-form" id="inputSemestrais" min="0" placeholder="R$ 0.000,00"/>
+
+
+       <input type="button" value="Ajustar Semestrais" class="buttonRegistrar"/>
+    </form>  
+
+    <form  class="form">
+      <label class="label-form">FINAL</label>
+
+      <input type="number" class="input-form" id="inputFinal" min="0" placeholder="R$ 0.000,00"/>
+
+
+     <input type="button" value="Ajustar Final" class="buttonRegistrar"/>
+    </form>  
+     
+       
+    <input type="button" value="Aprovar Fluxo" class="buttonAprovar" onclick="somar()"/>
+
+
+     
+  </div >
+
+ 
+    
+
+</div>
+
+<div class="resultadoDosFluxos"> 
+
+ <div class="resultadoFluxo">
+  <label class="label-form-resultado">RESULTADO:</label>
+  <span id="resultadoSoma"  >  </span>
+ 
+  </div>
+
+
+  <div class="resultadoFluxo">
+   <label class="label-form-resultado">RESTANTE:</label>
+   <span id="restanteUnidade" >  </span>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
